@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#9dc1ab", "on-error-container": "#ffdad6", "on-tertiary": "#442b00", "inverse-primary": "#835331", "on-primary-container": "#452003", "primary": "#f9b98f", "secondary-fixed": "#c7ebd4", "tertiary-fixed-dim": "#f2be71", "surface-container-high": "#242c27", "on-tertiary-fixed": "#291800", "inverse-on-surface": "#2b322d", "primary-fixed": "#ffdcc7", "on-error": "#690005", "surface-container-low": "#161d19", "tertiary-fixed": "#ffddb1", "surface-container-highest": "#2f3632", "surface": "#0e1511", "secondary-container": "#30503e", "primary-container": "#bd845e", "background": "#0e1511", "outline": "#9e8d84", "on-secondary-fixed-variant": "#2d4d3c", "on-surface-variant": "#d6c3b8", "outline-variant": "#51443c", "error-container": "#93000a", "on-surface": "#dde4dd", "tertiary-container": "#b68941", "on-primary-fixed-variant": "#683c1c", "tertiary": "#f2be71", "surface-variant": "#2f3632", "on-secondary-fixed": "#002113", "error": "#ffb4ab", "secondary-fixed-dim": "#abcfb8", "surface-container": "#1a211d", "on-tertiary-fixed-variant": "#614000", "primary-fixed-dim": "#f9b98f", "surface-bright": "#333b36", "secondary": "#abcfb8", "surface-dim": "#0e1511", "on-primary-fixed": "#311300", "on-background": "#dde4dd", "on-tertiary-container": "#3b2500", "on-secondary": "#163627", "surface-tint": "#f9b98f", "inverse-surface": "#dde4dd", "on-primary": "#4d2608", "surface-container-lowest": "#09100c" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "margin": "3.5rem", "space-xs": "0.25rem", "space-xl": "3rem", "space-lg": "1.75rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "body-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-xl": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "body-xl": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ] }, "fontSize": { "headline-xl-mobile": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-xl": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-hero-mobile": [ "44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-xl": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-caps": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" } ], "display-hero": [ "96px", { "lineHeight": "96px", "letterSpacing": "-0.04em", "fontWeight": "700" } ] } } } };</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"><style>h1,h2,h3,h4,.font-headline-xl,.font-headline-lg,.font-headline-md,.font-headline-sm,.font-display-hero{font-family:"Playfair Display",Georgia,serif!important}</style></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Zarafa Kenya Safari Lodge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vhlrg9qKU6xYilKC0Vf9JuVoHW4WX-9bk4nt92ty18Jk30iV8WCfVsuNxIMSq6Kx-U505d_XXoH_5PaMv7Jn_RCIlbHXRrZkApKlU6m9MK8EzPEVLOY0wfPFjMj_9ZCLG39BkYiM4ISOhW7BwJcu40GZemJjDtFNrbXw8h5F4bq0HUKODmozY2TZG3TWwZ0Wj3GYKyBePw2yf8y6kOCXX2V4jqFtxNBxpAdt12w2INh23ycB6wVMAO42g"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none uppercase">Zarafa</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Kenya Wildlife Sanctuary</span></div></div><nav class="hidden xl:flex items-center gap-gutter" data-active-classes="text-on-surface bg-surface-container font-label-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded" data-path="stay-and-suites" href="#">Stay &amp; Suites</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm rounded text-on-surface bg-surface-container font-label-md" data-path="experiences" href="#">Experiences</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded" data-path="dining" href="#">Dining</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded" data-path="location-and-travel" href="#">Location &amp; Travel</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded" data-path="contact-and-faqs" href="#">Contact &amp; FAQs</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end text-right"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Lodge Concierge</span><span class="font-label-md text-label-md text-tertiary">+254 (0) 20 891 3000</span></div><a class="inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-xl transition-all shadow-sm" data-path="check-availability" href="#"><span class="uppercase tracking-wider">Check Availability</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH CINEMATIC ATMOSPHERE -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest -mt-20 pt-28 pb-16 lg:pb-24">
+<!-- Atmospheric background with high-contrast editorial scrim -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center mix-blend-luminosity opacity-35" data-alt="Cinematic high contrast photograph of an imposing male lion resting on golden sun-drenched savannah grass beneath an acacia tree in Amboseli Kenya. Dramatic directional warm equatorial sunlight, deep shadows, dark moody background, architectural editorial composition, ultra-fine dust particles glowing in the sunbeam." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeNqBlpgFMVpyTyegl53DYCTy3ioBX3RVcm6z6xrgWjCBnJR7UuZ6MplfucNnAl_o7c8920CV9r3kZW6ZvLZyvpa4ZstK6FfF12CHpuP634WTv-sCrOvqakJEe7AITHVLJKyjFmxGOS-qS9FPAocJWbnGmo_CaXKibnqjm3dReZk-dG1VeGa7oAVAIW1wV5ek0mUY--ge_8HuUrp3guDk_X9o8mo4_9c7vMeo7IH2QHEMXLTHOumhS_w')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/40"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-surface/90"></div>
+<div class="relative w-full px-margin-mobile lg:px-margin max-w-7xl mx-auto flex flex-col pt-8 lg:pt-14">
+<!-- Breadcrumb & Top Label -->
+<div class="flex items-center gap-space-xs text-tertiary mb-6">
+<span class="font-label-caps text-label-caps tracking-widest uppercase">Zarafa Conservation Field Unit</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Ecosystem Protocols</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<div class="lg:col-span-8 flex flex-col gap-4">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight uppercase max-w-3xl">
+            Expeditions in an Untamed Landscape
+          </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl leading-relaxed">
+            Safaris guided by professional silver and gold-level KWS guides whose generational intimacy with the land ensures ethical, unhurried, and profound wildlife encounters.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-3 pb-2">
+<div class="bg-surface-container/90 backdrop-blur-md p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between text-on-surface mb-2">
+<span class="font-label-caps text-label-caps uppercase text-tertiary">Reserve Status</span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container text-secondary text-label-sm font-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                Active Daylight Patrol
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface-variant text-body-sm font-body-sm pt-2">
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider font-label-sm">Habitat Concession</span>
+<span class="text-on-surface font-semibold">32,000 Hectares</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider font-label-sm">Vehicle Density</span>
+<span class="text-on-surface font-semibold">&lt; 1 per 1,500 Ha</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Wildlife Ethics Notice Card -->
+<div class="mt-10 bg-surface-container-high/90 backdrop-blur-md rounded-xl p-space-md lg:p-space-lg shadow-xl">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center shrink-0 mt-0.5 text-tertiary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider">Wildlife Ethics Notice</span>
+<span class="bg-surface-variant text-on-surface-variant text-[10px] font-label-sm uppercase px-1.5 py-0.5 rounded">KWS Standard</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-4xl">
+                We adhere strictly to park regulations and ethical guiding standards. Off-roading is restricted to designated conservancy zones to protect delicate grasslands. Wildlife sightings depend on natural animal movements and cannot be guaranteed.
+              </p>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-variant text-on-surface hover:bg-surface-bright transition-colors text-label-md font-label-md" href="#code-of-conduct">
+<span>Read Field Protocol</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">450+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Avian Species Logged</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">KWS Certified Naturalists</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">6 Max</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Guests Per Cruiser</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">0 dB</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Light Aircraft Noise Cap</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE ACTIVITIES BREAKDOWN SECTION -->
+<section class="w-full bg-surface py-16 lg:py-24">
+<div class="w-full px-margin-mobile lg:px-margin max-w-7xl mx-auto flex flex-col gap-12">
+<!-- Section Editorial Intro -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest block mb-2">Curated Bush Programs</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight uppercase">Core Reserve Encounters</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Every excursion is calibrated to the seasonal rhythm of the wild. Unhurried observation takes precedence over tick-box game driving.
+        </p>
+</div>
+<!-- Activities Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- CARD 1: Game Drives -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Open sided customized luxury safari 4x4 Land Cruiser traversing savannah tracks with professional photographer spotting cheetah resting on a low termite mound in golden early morning Amboseli mist." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHZ_7A7RZsNPWjnBKutmU69NceJz1cmhLMiyZH3eLazle5hjA9iv1x6CAS3-cjop7tQ9IGR2tCBm-COfvnm3ug1IUR6Ws4KXMOk9vih-kmRU8BCyQbJRdA8eUn_KcE17EdAD5AyxU-he2Zaa2P0z8HdfwcrldfgPekLby78_aEdSSOhozLfu1aY3p43r8uGgI7V3_nR6nzV22ukbD35q6OUnuBNzCtfDQ7S-sGiR1osDDmqZKPzZCLqw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container/90 text-secondary font-label-caps text-label-caps uppercase backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Included in Safari Package • Twice Daily
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Open-Sided 4x4 Dawn &amp; Twilight Game Drives</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Custom Toyota Land Cruisers fitted with camera beanbags, individual USB charging, pop-up roofs, and open sides. Expert tracking of the Big Five, cheetah coalitions, and vast ungulate herds.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Daily Slots</span>
+</div>
+<span class="text-on-surface-variant font-medium text-xs">06:00 - 09:30 | 16:00 - 19:00</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Bush Walking Safaris -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Intrepid small walking safari group led by an armed Kenya Wildlife Service ranger in olive uniform and local Maasai naturalist guide examining fresh elephant footprints along sandy dry riverbed path at dawn." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsRTEo7JZXGX-3vmmCy_PR3MLKiNiRKMFDqqdcij9diB50ZlSiHLst37YuhQ4TFuyzLdwp89Y2_SeI0WJ-iiF9RTgHJSP_xTnUcXMQ2Xd_w1KwnM-1zY2RQTZIGLoXjUjazvB5PVcvCsJMY7mskpPmLAuKahpGQ3aavLAus7MM4cD22bsDj4lUi5iU4WWuf6kMsU8LTMzeQ9Ska1U_Z1ExdI0Qu4piEMlhyM4nkLgPEDZ2AgxAzoNzZQ')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-tertiary-container/90 text-on-tertiary-container font-label-caps text-label-caps uppercase backdrop-blur-sm">
+              Min Age 16+ • Advance Booking
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Guided Bush Walking Safaris</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Experience the bush from ground level accompanied by an armed KWS ranger and certified naturalist guide. Learn to read tracks, identify medicinal plants, examine dung beetles and termites, and understand the nuanced micro-ecosystems often missed from a vehicle.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">footprint</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Duration</span>
+</div>
+<span class="text-on-surface-variant font-medium text-xs">2 to 3 hrs in cool morning</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Birdwatching Excursions -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Exquisite detailed macro shot of a vibrant lilac-breasted roller perched on a spiky acacia thorn branch under crisp blue savannah sky, intense iridescent turquoise and purple feathers, pristine safari bokeh." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4SL8C2-FY4-uesaWUqIXATz3hRNLhfw25NDUq2fcTnrMmmBxUsvS0VTM0PqK8gICatr36Mcq4ZPXbdNJsTxdHOh5jorp5uxB4tG_MHsDV7ic457SGytvid8fu1xmhJEhVeurvFzia5-r816Rfjib-Q9z6cpudUTGFHiTMCDCyH8DcThICtKnYDYmNYIFOgg5X_ttboCT-4Uom5XA45EENTL_rIfT6HYoOefrNtuneIO03oJdr_RomXA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container/90 text-secondary font-label-caps text-label-caps uppercase backdrop-blur-sm">
+              All Seasons • Premier Birding Zone
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Specialist Birdwatching &amp; Ornithology</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Guided exploration of over 450 recorded species including lilac-breasted rollers, martial eagles, secretary birds, and migratory bee-eaters. High-magnification Swarovski spotting scopes provided for guest use.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">visibility</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Equipment</span>
+</div>
+<span class="text-on-surface-variant font-medium text-xs">High-Magnification Scopes Incl.</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: Savannah Sundowners -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Elegant wilderness sundowner setup on a rocky volcanic kopje overlooking endless savannah at golden sunset. Canvas safari chairs, brass lanterns, artisanal Kenyan gin bottles, acacia silhouetted against glowing orange sky." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvoJESNYJtldFxgaEabjDiBckaORrolRzP4KFc44J0plB9AMLVg_82sC4zmch37RXQNqEk5LeZrhh6UUR1NHSrM06l1xwX56Xj4hGGTfgj9wCpSqsbK2xMxTQZ5eyggzm6zt6WbivDj-ITv2PHNJeQfGlYHgERuPXK_C4FtfUY3gRPZL-n0BCz5R0x-uaGg-6EYKGv4PKctX7aB1zSA4WoDHhjEgxQkf08YcuZAnA_KaAjaBeNW3y1IA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container/90 text-secondary font-label-caps text-label-caps uppercase backdrop-blur-sm">
+              Daily Highlight • Included
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Savannah Sundowners &amp; Stargazing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                As the afternoon heat softens, gather around a bespoke mobile bar set on a panoramic crest or rocky outcrop. Sip handcrafted gin cocktails while watching the sun descend over the horizon, followed by astronomy under unpolluted Southern skies.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">wine_bar</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Timing</span>
+</div>
+<span class="text-on-surface-variant font-medium text-xs">17:45 Departure Daily</span>
+</div>
+</div>
+</div>
+<!-- CARD 5: Balloon Safari -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Hot air balloon floating serenely above wide Kenyan savannah plain at first light of dawn with herds of zebras and wildebeest casting long dramatic shadows across the grass." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDds-UXVrB1FV2_nlyeOnrEMbWP4aWzKo47I4EE83ezK8KW0igBaUeacxGQ30T3V6EhbPbEYe1NUcQvzIWmS8Gg6nc5XIIhCtm_5l76uCQbQh34Wg_nOP_ylkhwNUedR420NjI1KUFyLbacG1ivNio3ak4vn811D5QOM0C2D54d3DQRq_RlEZ5zWDoRXuyenhTqp8ZHe6jaOESTI2PF6mo3vqbpfaWQZGhdKiQrcNNnFPl6ZKiZARFagw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase backdrop-blur-sm">
+              Optional Extra • Third-Party Operator
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Hot Air Balloon &amp; Bush Breakfast</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Lift off at dawn for a serene aerial float over the waking savannah and winding rivers, concluding with a traditional champagne breakfast prepared by chefs in the wild.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">payments</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Indicative Fee</span>
+</div>
+<span class="text-tertiary font-semibold text-xs">Approx. $450 - $550 pp</span>
+</div>
+</div>
+</div>
+<!-- CARD 6: Maasai Partnership -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Authentic portrait of a respectful conversation between a Maasai village elder wearing red traditional shuka and intricate beaded collar and an interested safari visitor outside an authentic acacia boma enclosure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDq_QFNkrZ3-w_SExt5Ui9J6uFCqhCv5oDJ1KWNiWNRQx1TZAgpZbYQfIaX40lqAYCQ_bKMaO8OSnKwRJjLiSBOEIObzdePYiM1xFsUiKOL0RXt0Mutx79ilvI3ilhMnLeMa0z_tNmgAvvYiFtfD_Zst70TVIOxnXMtABqQ_Y8LrSk1pnxRWDYhb9exwVG9IEBJEne9N3ijb97_FkSCjOxKlngLUEh3lOZm1RV9e7lRgk0R7EuSCe8WIg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<span class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container/90 text-secondary font-label-caps text-label-caps uppercase backdrop-blur-sm">
+              Cultural Exchange • Direct Community Fee
+            </span>
+<div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Maasai Cultural Partnership Visits</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Meaningful, uncommercialized visits to neighbouring Maasai Manyattas where community elders share pastoralist traditions, beadwork craft, and modern education initiatives funded directly through lodge conservation levies.
+              </p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">handshake</span>
+<span class="font-semibold text-xs tracking-wider uppercase font-label-caps">Stewardship</span>
+</div>
+<span class="text-on-surface-variant font-medium text-xs">100% Retained by Community</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SEASONALITY & MIGRATION CALENDAR (Tactile Terroir Visualizer) -->
+<section class="w-full bg-surface-container-low py-16 lg:py-24">
+<div class="w-full px-margin-mobile lg:px-margin max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest block mb-2">Climatic Rhythm &amp; Biomass Dynamics</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight uppercase">Annual Migration &amp; Seasonality</h2>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Calibrated to Greater Mara-Amboseli Corridor Data</span>
+</div>
+</div>
+<!-- Seasonality Interactive Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Period 1: Dec - Mar -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-headline-sm text-headline-sm font-bold">DEC – MAR</span>
+<span class="material-symbols-outlined text-primary text-xl">wb_sunny</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">Dry Season &amp; Predator Action</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Warm, dry conditions with exceptional predator hunting visibility. Calving season across ungulates brings high territorial activity around waterholes.
+            </p>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex justify-between text-[11px] font-label-caps uppercase text-outline">
+<span>Game Density</span>
+<span class="text-on-surface font-semibold">95% Concentration</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%;"></div>
+</div>
+<span class="text-xs text-on-surface-variant font-body-sm">Ideal for: Large cats &amp; clear night skies</span>
+</div>
+</div>
+<!-- Period 2: Apr - May -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-secondary font-headline-sm text-headline-sm font-bold">APR – MAY</span>
+<span class="material-symbols-outlined text-secondary text-xl">rainy</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">The Emerald Season</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dramatic afternoon thunderheads, newborn animals, emerald plains, and low dust. Solitary safaris with near-zero vehicle traffic and sensational photography light.
+            </p>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex justify-between text-[11px] font-label-caps uppercase text-outline">
+<span>Photography Index</span>
+<span class="text-on-surface font-semibold">Maximum Color Depth</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="text-xs text-on-surface-variant font-body-sm">Ideal for: Macro, landscape &amp; birding</span>
+</div>
+</div>
+<!-- Period 3: Jun - Oct -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md ring-2 ring-primary/30">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-primary font-headline-sm text-headline-sm font-bold">JUN – OCT</span>
+<span class="material-symbols-outlined text-primary text-xl">trending_up</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-on-surface">The Great Migration</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container text-[10px] font-bold font-label-sm uppercase">Peak</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Hundreds of thousands of wildebeest, zebras, and gazelles surge through the ecosystem. River crossings, intense predator encounters, and cool morning breezes.
+            </p>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex justify-between text-[11px] font-label-caps uppercase text-outline">
+<span>Demand Level</span>
+<span class="text-primary font-semibold">Highest (Reserve Early)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="text-xs text-on-surface-variant font-body-sm">Ideal for: River crossings &amp; apex predator tracking</span>
+</div>
+</div>
+<!-- Period 4: Nov -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-tertiary-fixed font-headline-sm text-headline-sm font-bold">NOV</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-xl">air</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">Short Rains &amp; Migrant Birds</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Brief refreshing afternoon showers rejuvenate grasslands. Thousands of migratory birds arrive from Eurasia, creating an extraordinary sensory tapestry.
+            </p>
+</div>
+<div class="pt-6 mt-6 bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex justify-between text-[11px] font-label-caps uppercase text-outline">
+<span>Avian Abundance</span>
+<span class="text-on-surface font-semibold">Peak Diversity</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 90%;"></div>
+</div>
+<span class="text-xs text-on-surface-variant font-body-sm">Ideal for: Ornithologists &amp; peaceful luxury</span>
+</div>
+</div>
+</div>
+<!-- Wildlife Migration Route Map / Infographic Panel -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-lg grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5 flex flex-col gap-4">
+<span class="font-label-caps text-label-caps uppercase text-tertiary">Real-Time Naturalist Telemetry</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">Unfenced Wildlife Corridors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our concession sits directly within an unfragmented dispersal ecosystem. Animals roam freely across natural migratory routes dictated by rainfall, green flush, and seasonal mineral pans.
+          </p>
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Zero perimeter boundary fences along the wildlife boundary</span>
+</div>
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Daily ranger intelligence briefing before every vehicle deployment</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-4">
+<div class="flex items-center justify-between text-xs font-label-caps uppercase text-outline">
+<span>Ecosystem Grazing &amp; Rainfall Sparklines (12 Months)</span>
+<span class="text-primary">Source: Tsavo-Amboseli Research</span>
+</div>
+<!-- Inline Minimal SVG sparkline chart -->
+<div class="w-full h-36 flex items-center justify-center">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="savannahGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#bd845e" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#bd845e" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 0 95 C 40 90, 80 50, 120 40 C 160 30, 200 95, 250 85 C 300 75, 340 15, 390 10 C 440 5, 470 60, 500 70 L 500 120 L 0 120 Z" fill="url(#savannahGrad)"></path>
+<path d="M 0 95 C 40 90, 80 50, 120 40 C 160 30, 200 95, 250 85 C 300 75, 340 15, 390 10 C 440 5, 470 60, 500 70" stroke="#f9b98f" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Points -->
+<circle cx="120" cy="40" fill="#f2be71" r="4"></circle>
+<circle cx="250" cy="85" fill="#abcfb8" r="4"></circle>
+<circle class="animate-pulse" cx="390" cy="10" fill="#f9b98f" r="5"></circle>
+<!-- Marker labels -->
+<text fill="#dde4dd" font-family="Plus Jakarta Sans" font-size="10" text-anchor="middle" x="120" y="30">Calving Peak</text>
+<text fill="#dde4dd" font-family="Plus Jakarta Sans" font-size="10" text-anchor="middle" x="250" y="75">Green Flush</text>
+<text fill="#f9b98f" font-family="Space Grotesk" font-size="10" font-weight="bold" text-anchor="middle" x="390" y="3">Mara Crossings</text>
+</svg>
+</div>
+<div class="grid grid-cols-4 text-center text-xs text-outline-variant font-label-caps uppercase pt-1">
+<span>Jan - Mar</span>
+<span>Apr - May</span>
+<span>Jun - Sep</span>
+<span>Oct - Dec</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SAFETY, ETHICS & CONDUCT PROTOCOL (Strict Guidelines Accordion / Grid) -->
+<section class="w-full bg-surface py-16 lg:py-24" id="code-of-conduct">
+<div class="w-full px-margin-mobile lg:px-margin max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col max-w-3xl">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-widest block mb-2">Guest Field Readiness</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight uppercase">Safety, Attire &amp; Health Protocols</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          Safeguarding wildlife wellness and guest security is governed by clear standard operating protocols developed alongside the Kenya Wildlife Service.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Pillar 1: Dress Code -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-4 shadow-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">checkroom</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recommended Bush Attire</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Neutral tones (khaki, olive, taupe, stone) blend seamlessly with savannah scrub and avoid attracting tsetse flies, which are drawn to dark blue and black.
+          </p>
+<ul class="flex flex-col gap-2 pt-2 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="text-tertiary font-bold">•</span>
+<span>Sturdy closed walking boots with ankle support for walking safaris</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-tertiary font-bold">•</span>
+<span>Layered fleece or lightweight windbreaker for brisk 06:00 open drives</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-tertiary font-bold">•</span>
+<span>Wide-brimmed safari hat with chin retention strap</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 2: Health Advisory -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-4 shadow-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Health &amp; Malaria Advisory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Zarafa sits at 1,180m elevation. While our semi-arid climate reduces mosquito presence, Kenya is a designated malaria-risk zone.
+          </p>
+<ul class="flex flex-col gap-2 pt-2 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="text-secondary font-bold">•</span>
+<span>Consult your travel physician regarding prophylaxis (Malarone / Doxycycline)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-secondary font-bold">•</span>
+<span>Emergency Flying Doctors medical air evacuation insurance included with all stays</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-secondary font-bold">•</span>
+<span>Comprehensive on-site first aid trauma station and certified medics</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 3: Bush Rules -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-4 shadow-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">policy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Conduct in Vehicle &amp; on Foot</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Animals see safari vehicles as a single harmless silhouette. Abrupt standing, dangling arms, or excessive noise can shatter this perception.
+          </p>
+<ul class="flex flex-col gap-2 pt-2 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold">•</span>
+<span>Never stand up when vehicles are stationary near big cats</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold">•</span>
+<span>Camera flash is prohibited at all times on game drives</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-primary font-bold">•</span>
+<span>Drones are strictly forbidden across Kenyan National Parks &amp; Reserves</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- IMMERSIVE CALL TO ACTION STRIP -->
+<section class="w-full bg-surface-container-lowest py-16">
+<div class="w-full px-margin-mobile lg:px-margin max-w-7xl mx-auto">
+<div class="relative bg-surface-container rounded-2xl overflow-hidden p-8 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+<div class="flex flex-col gap-3 max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-tertiary">Plan Your Tailored Itinerary</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">Speak With Our Expedition Lead</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Whether preparing professional high-magnification photographic gear or arranging a multi-generation family safari, our head ranger will review your pace and preferences in advance.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md uppercase tracking-wider transition-colors shadow-md" data-path="check-availability" href="#">
+<span>Check Sanctuary Availability</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase tracking-wider transition-colors" data-path="contact-and-faqs" href="#">
+<span>Inquire Directly</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface pt-space-xl pb-space-lg"><div class="w-full px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Zarafa Kenya Safari Lodge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vhlrg9qKU6xYilKC0Vf9JuVoHW4WX-9bk4nt92ty18Jk30iV8WCfVsuNxIMSq6Kx-U505d_XXoH_5PaMv7Jn_RCIlbHXRrZkApKlU6m9MK8EzPEVLOY0wfPFjMj_9ZCLG39BkYiM4ISOhW7BwJcu40GZemJjDtFNrbXw8h5F4bq0HUKODmozY2TZG3TWwZ0Wj3GYKyBePw2yf8y6kOCXX2V4jqFtxNBxpAdt12w2INh23ycB6wVMAO42g"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">Zarafa Safari Lodge</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">A carbon-neutral architectural sanctuary pioneering wilderness conservation and community stewardship within the heart of Kenya's pristine savannah ecosystems.</p><div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm pt-space-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span>Zarafa Private Reserve, Amboseli-Tsavo Corridor, Kenya</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">call</span><span>+254 (0) 20 891 3000 • 24/7 Operations Desk</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">mail</span><span>reservations@zarafalodge.co.ke</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-tertiary uppercase">Sanctuary &amp; Stay</span><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="stay-and-suites" href="#">Luxury Tented Pavilions</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="stay-and-suites" href="#">Acacia Pool Suites</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="experiences" href="#">Private Game Drives</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="experiences" href="#">Walking Wilderness Safaris</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="dining" href="#">Bush Dining &amp; Boma</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="conservation" href="#">Conservation Trust</a></li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-tertiary uppercase">Expedition Guidance</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="bg-surface-container-low p-space-sm rounded-lg"><span class="font-label-md text-label-md text-on-surface block">Airstrip Coordinates</span><span>Amboseli / Ol Donyo Airstrip (HKLU): 35 mins scheduled light aircraft from Wilson Airport (WIL).</span></div><div class="bg-surface-container-low p-space-sm rounded-lg"><span class="font-label-md text-label-md text-on-surface block">Reserve Gates &amp; Curfew</span><span>Gates close promptly at 18:30 EAT. Late arrivals require chartered airstrip transfer authorization.</span></div><div class="bg-surface-container-low p-space-sm rounded-lg"><span class="font-label-md text-label-md text-on-surface block">Park Tariffs</span><span>Daily KWS conservation fees included in all premier sanctuary reservations.</span></div></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-tertiary uppercase">Whispers of the Savannah</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive our quarterly naturalist dispatch chronicling migration patterns, predator tracking logs, and celestial sightings.</p><div class="flex flex-col gap-space-xs pt-space-xs"><div class="flex items-center bg-surface-container rounded-lg px-space-sm py-space-xs"><input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full focus:outline-none" placeholder="Your email address" type="email"/><button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider px-space-sm py-space-xs rounded ml-space-xs hover:bg-primary transition-colors shrink-0">Join</button></div><span class="font-label-sm text-label-sm text-outline">Honoring your privacy. Zero spam ever.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Zarafa Kenya Safari Lodge • Protected Wildlife Concession</span><div class="flex flex-wrap items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="kws-regulations" href="#">KWS Wildlife Regulations</a><a class="hover:text-on-surface transition-colors" data-path="booking-terms" href="#">Terms of Booking</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="conservation-ethics" href="#">Ethical Safaris</a></div></div></div></footer><script>(function(){const routes={home:"home.html","stay-and-suites":"stay-and-suites.html",experiences:"experiences.html","mara-horizon-suite":"mara-horizon-suite.html",dining:"dining.html","check-availability":"check-availability.html","contact-and-faqs":"contact-and-faqs.html","location-and-travel":"location-and-travel.html"};const inside=location.pathname.replace(/\\/g,"/").includes("/screens/");const base=inside?"":"screens/";document.querySelectorAll("a").forEach(a=>{const key=a.getAttribute("data-path");const label=(a.innerText||a.textContent||"").trim().toLowerCase();if(key&&routes[key])a.href=base+routes[key];else if(label.includes("room details")||label.includes("mara horizon suite"))a.href=base+routes["mara-horizon-suite"];});})();</script></body></html>
